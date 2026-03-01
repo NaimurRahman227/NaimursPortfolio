@@ -1,5 +1,5 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" width="100%" />
+<img width="1200" height="475" alt="GHBanner" src="images/portfolio.png" width="100%" />
 </div>
 
 # 🚀My Personal Portfolio Website
