@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-primary: #10b981;
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-border: var(--border-color);
+  --color-text-base: var(--text-base);
+  --color-text-muted: var(--text-muted);
+}
+
+:root {
+  --surface: #09090b;
+  --surface-muted: #18181b;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --text-base: #f4f4f5;
+  --text-muted: #a1a1aa;
+}
+
+:root.light {
+  --surface: #fafafa;
+  --surface-muted: #f4f4f5;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --text-base: #09090b;
+  --text-muted: #52525b;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-text-base font-sans antialiased selection:bg-primary/30 selection:text-primary transition-colors duration-300;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-md border border-white/10;
+}
+
+.light .glass {
+  @apply bg-black/5 border-black/10;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-text-base via-text-base to-text-muted;
+}
+
+
