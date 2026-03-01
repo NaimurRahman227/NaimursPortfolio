@@ -7,7 +7,7 @@ const projects = [
     description: "A real-time analytics platform for high-frequency trading data. Built with Next.js, WebSockets, and D3.js for complex visualizations.",
     tags: ["Next.js", "JavaScript", "Tailwind CSS", "React"],
     image: "https://picsum.photos/seed/trading/800/600",
-    link: "https://dashboard-kdbb.vercel.app/dashboard",
+    link: "https://dashboard-psi-orpin-50.vercel.app/",
     github: "https://github.com/NaimurRahman227/Dashboard"
   },
   {
