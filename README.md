@@ -1,5 +1,5 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="images/portfolio.png" width="100%" />
+<img width="1200" height="475" alt="GHBanner" src="public/portfolio.png" width="100%" />
 </div>
 
 # 🚀My Personal Portfolio Website
@@ -12,12 +12,12 @@ Naimur Rahman
 
 A modern developer portfolio built using React, Tailwind CSS, and Framer Motion.
 
-## 🌐 Live Demo
-https://your-portfolio-link.com
+## Live Demo
+https://naimurs-portfolio.vercel.app/
 
 ---
 
-## ✨ Features
+## Features
 
 - Modern glassmorphism UI
 - Smooth animations (Framer Motion)
@@ -28,7 +28,7 @@ https://your-portfolio-link.com
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - React
 - TypeScript
@@ -39,7 +39,7 @@ https://your-portfolio-link.com
 
 ---
 
-## ⚙️ Run Locally
+## Run Locally
 
 ### Prerequisites
 - Node.js (v18+)

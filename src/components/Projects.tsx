@@ -1,12 +1,22 @@
 import { motion } from 'motion/react';
 import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
 
+
 const projects = [
   {
-    title: "QuantumFlow Dashboard",
-    description: "A real-time analytics platform for high-frequency trading data. Built with Next.js, WebSockets, and D3.js for complex visualizations.",
-    tags: ["Next.js", "JavaScript", "Tailwind CSS", "React"],
-    image: "https://picsum.photos/seed/trading/800/600",
+    title: "ResuMate AI",
+    description: "An AI-powered resume analysis web application that parses PDF/DOCX resumes, extracts structured content, and generates intelligent feedback using generative AI. Built with a full-stack architecture featuring secure authentication, file uploads, and real-time resume insights.",
+    tags: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Multer", "AI Integration"],
+    image: "/resumategit.png",
+    link: "https://resumate-ai-77wv.onrender.com",
+    github: "https://github.com/NaimurRahman227/ResuMate"
+  },
+
+  {
+    title: "Secure Login Dashboard",
+    description: "A modern authentication-based dashboard built with React and Vite. Features protected routes, context-based authentication, responsive UI design, and reusable component architecture. Designed with Tailwind CSS and optimized for production deployment on Vercel.",
+    tags: ["React", "Vite", "React Router", "Context API", "Tailwind CSS", "Authentication"],
+    image: "/d.png",
     link: "https://dashboard-psi-orpin-50.vercel.app/",
     github: "https://github.com/NaimurRahman227/Dashboard"
   },
@@ -14,17 +24,9 @@ const projects = [
     title: "EcoSphere E-Commerce",
     description: "A sustainable marketplace platform with advanced filtering, real-time inventory tracking, and integrated carbon footprint calculation.",
     tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
-    image: "https://picsum.photos/seed/eco/800/600",
+    image: "/TeaStall.png",
     link: "https://naimurrahman227.github.io/First_Sip_Coffee/",
     github: "https://github.com/NaimurRahman227/First_Sip_Coffee"
-  },
-  {
-    title: "Nexus Collaborative Editor",
-    description: "A real-time document editing tool supporting multi-user collaboration, version history, and rich text formatting using CRDTs.",
-    tags: ["React", "Socket.io", "MongoDB", "Express"],
-    image: "https://picsum.photos/seed/collab/800/600",
-    link: "https://naimurrahman227.github.io/BikersZone/",
-    github: "https://github.com/NaimurRahman227/BikersZone"
   }
 ];
 
@@ -36,7 +38,7 @@ export default function Projects() {
           <h2 className="text-sm font-bold text-primary uppercase tracking-widest mb-4">Selected Work</h2>
           <h3 className="text-4xl md:text-5xl font-bold mb-6">Featured Projects.</h3>
           <p className="text-text-muted text-lg">
-            A collection of projects that demonstrate my ability to solve complex problems 
+            A collection of projects that demonstrate my ability to solve complex problems
             and deliver high-quality software solutions.
           </p>
         </div>
@@ -47,13 +49,13 @@ export default function Projects() {
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              whileHover={{ 
-                scale: 1.02, 
+              whileHover={{
+                scale: 1.02,
                 y: -10,
                 boxShadow: "0 20px 40px rgba(0,0,0,0.3)"
               }}
               viewport={{ once: true }}
-              transition={{ 
+              transition={{
                 delay: index * 0.1,
                 duration: 0.3,
                 ease: "easeOut"
@@ -61,22 +63,22 @@ export default function Projects() {
               className="group relative glass rounded-[2.5rem] overflow-hidden flex flex-col cursor-pointer"
             >
               <div className="relative `aspect-16/10` overflow-hidden">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-4">
-                   <a href={project.link} className="p-4 bg-text-base text-surface rounded-full hover:scale-110 transition-transform">
-                      <ExternalLink className="w-6 h-6" />
-                   </a>
-                   <a href={project.github} className="p-4 bg-text-base text-surface rounded-full hover:scale-110 transition-transform">
-                      <Github className="w-6 h-6" />
-                   </a>
+                  <a href={project.link} className="p-4 bg-text-base text-surface rounded-full hover:scale-110 transition-transform">
+                    <ExternalLink className="w-6 h-6" />
+                  </a>
+                  <a href={project.github} className="p-4 bg-text-base text-surface rounded-full hover:scale-110 transition-transform">
+                    <Github className="w-6 h-6" />
+                  </a>
                 </div>
               </div>
-              
+
               <div className="p-10 flex-1 flex flex-col">
                 <div className="flex items-start justify-between mb-4">
                   <h4 className="text-2xl font-bold group-hover:text-primary transition-colors">{project.title}</h4>
@@ -95,13 +97,13 @@ export default function Projects() {
               </div>
             </motion.div>
           ))}
-          
+
           {/* See More Card */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            whileHover={{ 
-              scale: 1.02, 
+            whileHover={{
+              scale: 1.02,
               y: -10,
               boxShadow: "0 20px 40px rgba(0,0,0,0.2)"
             }}

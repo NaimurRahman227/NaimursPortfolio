@@ -11,7 +11,7 @@ const education = [
     achievements: ["Winner Software Exhibition 2023", "Research Assistant in AI Lab"]
   },
   {
-    degree: "Database(MySQL/Oracle/SQL Server)",
+    degree: "Database (MySQL/Oracle/SQL Server)",
     institution: "Bangladesh Computer Council , ICT Division",
     period: "2023- 2024",
     location: "HSTU, Bangladesh",

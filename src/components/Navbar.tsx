@@ -31,7 +31,7 @@ export default function Navbar() {
             <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white group-hover:rotate-12 transition-transform">
               <Code2 className="w-6 h-6" />
             </div>
-            <span className="font-display font-bold text-xl tracking-tight">Naimur Rahman</span>
+            <span className="font-display font-bold text-xl tracking-tight">Naimur R.</span>
           </a>
 
           {/* Desktop Nav */}

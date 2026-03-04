@@ -65,7 +65,7 @@ export default function Hero() {
               <a href="https://github.com/NaimurRahman227" className="p-3 rounded-full border border-border hover:bg-white/5 transition-colors text-text-muted hover:text-text-base">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="#" className="p-3 rounded-full border border-border hover:bg-white/5 transition-colors text-text-muted hover:text-text-base">
+              <a href="https://www.linkedin.com/in/naimur7rahman/" className="p-3 rounded-full border border-border hover:bg-white/5 transition-colors text-text-muted hover:text-text-base">
                 <Linkedin className="w-5 h-5" />
               </a>
               <a href="mailto:nmrahman1652@gmail.com" className="p-3 rounded-full border border-border hover:bg-white/5 transition-colors text-text-muted hover:text-text-base">

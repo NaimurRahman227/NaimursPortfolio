@@ -22,7 +22,7 @@ export default function Footer() {
             <a href="https://github.com/NaimurRahman227" className="text-text-muted hover:text-text-base transition-colors">
               <Github className="w-5 h-5" />
             </a>
-            <a href="#" className="text-text-muted hover:text-text-base transition-colors">
+            <a href="https://www.linkedin.com/in/naimur7rahman/" className="text-text-muted hover:text-text-base transition-colors">
               <Linkedin className="w-5 h-5" />
             </a>
             <a href="#" className="text-text-muted hover:text-text-base transition-colors">
