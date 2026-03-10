@@ -1,6 +1,28 @@
 import { motion } from 'motion/react';
 import { Github, Linkedin, Mail, ArrowRight, Terminal, Code2, Database, Globe } from 'lucide-react';
 
+const container = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.03
+    }
+  }
+};
+
+const letter = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.3 }
+  }
+};
+
+const subtitle = "Hi, this is Naimur Rahman, a Full Stack Developer specializing in building high-performance web applications. I bridge gap between complex backend systems and intuitive frontend experiences . ";
+  
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
@@ -8,8 +30,8 @@ export default function Hero() {
       <div className="absolute top-0 left-0 w-full h-full -z-10">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/10 rounded-full blur-[120px]" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-indigo-500/10 rounded-full blur-[120px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-[0.03] pointer-events-none" 
-             style={{ backgroundImage: 'radial-gradient(#fff 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-[0.03] pointer-events-none"
+          style={{ backgroundImage: 'radial-gradient(#fff 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
       </div>
 
       <div className="container mx-auto px-6">
@@ -38,24 +60,29 @@ export default function Hero() {
             <span className="text-primary italic">Excellence</span> Through Code.
           </motion.h1>
 
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+
+          <motion.p
+            variants={container}
+            initial="hidden"
+            animate="visible"
+            transition={{ delay: 0.5 }}
             className="text-lg md:text-xl text-text-muted max-w-2xl mb-10 leading-relaxed"
           >
-            Full Stack Developer specializing in building high-performance web applications. 
-            I bridge the gap between complex backend systems and intuitive frontend experiences.
+            {subtitle.split("").map((char, index) => (
+              <motion.span key={index} variants={letter}>
+                {char}
+              </motion.span>
+            ))}
           </motion.p>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-wrap gap-4"
           >
-            <a 
-              href="#projects" 
+            <a
+              href="#projects"
               className="px-8 py-4 bg-text-base text-surface font-semibold rounded-full hover:opacity-90 transition-all flex items-center gap-2 group"
             >
               View Projects

@@ -3,6 +3,16 @@ import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
 
 
 const projects = [
+
+  {
+    title: "QuickDrop Logistics Platform",
+    description: "A full-stack logistics and parcel delivery management system featuring secure JWT authentication, Google OAuth login, role-based dashboards (User, Rider, Admin), parcel booking, rider approval workflow, order tracking, and RESTful APIs built with Node.js and MongoDB.",
+    tags: ["React", "Node.js", "Express.js", "MongoDB", "Firebase", "JWT Authentication", "Tailwind CSS"],
+    image: "/qdban2.png",
+    link: "https://quick-drop-client-lac.vercel.app/",
+    github: "https://github.com/NaimurRahman227/QuickDrop-Client"
+  },
+
   {
     title: "ResuMate AI",
     description: "An AI-powered resume analysis web application that parses PDF/DOCX resumes, extracts structured content, and generates intelligent feedback using generative AI. Built with a full-stack architecture featuring secure authentication, file uploads, and real-time resume insights.",
@@ -19,15 +29,8 @@ const projects = [
     image: "/d.png",
     link: "https://dashboard-psi-orpin-50.vercel.app/",
     github: "https://github.com/NaimurRahman227/Dashboard"
-  },
-  {
-    title: "EcoSphere E-Commerce",
-    description: "A sustainable marketplace platform with advanced filtering, real-time inventory tracking, and integrated carbon footprint calculation.",
-    tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
-    image: "/TeaStall.png",
-    link: "https://naimurrahman227.github.io/First_Sip_Coffee/",
-    github: "https://github.com/NaimurRahman227/First_Sip_Coffee"
   }
+
 ];
 
 export default function Projects() {
